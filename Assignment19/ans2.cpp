@@ -5,7 +5,7 @@ int main(){
 	printf("Enter 10 city name ");
 	int i,j;
 	char temp[20];
-	char str1[20]={0};
+
 	for(i=0;i<10;i++){
 		gets(str[i]);
 	}

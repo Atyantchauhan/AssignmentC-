@@ -25,6 +25,7 @@ int main(){
    	  	for(k=0;k<10;k++){
    	  		if(strV[k] == str[i][j])
    	  		count++;
+   	  		break;
 			 }
 			
 		 }
