@@ -1,24 +1,20 @@
-//5. Write a program to find the maximum number between two numbers using a pointer
-
-
 #include<stdio.h>
-int maximum(int* a,int*b,int* max);
-int maimum(int *a,int *b,int *max){
-    *max = *a>*b?*a:*b;
-	
-}
+int maxValue(int*, int*);
 int main(){
-	int a;
-	int b;
-	printf("Enter the value a ");
-	scanf("%d",&a);
-	printf("Enter the value b ");
-	scanf("%d",&b);
-	int max;
-	maximum(&a,&b,&max); // call by referance 
-	printf("maximum number is %d ",max);
+	int a,b;
+	printf("Enter two number ");
+	scanf("%d%d",&a,&b);
+    int max =	maxValue(&a,&b);
+	printf("the maximum value is %d",max);
 	
 	return 0;
 }
-
-
+// swapValue function 
+int maxValue(int *p,int *q){
+	if(*p>*q){
+		return *p;
+	}else{
+	   return *q;
+	}
+	
+}
